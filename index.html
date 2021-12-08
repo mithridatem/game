@@ -1,0 +1,46 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Jeux</title>
+</head>
+<body>
+    <h2>Création de personnage :</h2>
+    <h3>Choisir le personnage à créer 1 ou 2 ?</h3>
+    <select id="num">
+        <option value="1">Personnage 1</option>
+        <option value="2">Personnage 2</option>
+    </select>
+    <h3>Choisir le nom de votre personnage :</h3>
+    <p><input type="text" id="namePerso"></p>
+    <h3 id="italic">La somme de vie, attaque et défense ne peut pas dépasser 10 pts</h3>
+    <h3>Choisir la valeur de la vie :</h3>
+    <p><input type="text" id="lifePerso"></p>
+    <h3>Choisir la valeur d'attaque :</h3>
+    <p><input type="text" id="attaquePerso"></p>
+    <h3>Choisir la valeur de défense :</h3>
+    <p><input type="text" id="defPerso"></p>
+    <p><input type="button" value="recup" onclick="createPerso()"></p>
+    <div id="zonePerso">
+        <div id="perso1">
+            <h3>Personnage 1 :</h3>
+            <p id="name1"></p>
+            <p id="life1"></p>
+            <p id="attaque1"></p>
+            <p id="def1"></p>
+        </div>
+        <div id="perso2">
+            <h3>Personnage 2 :</h3>
+            <p id="name2"></p>
+            <p id="life2"></p>
+            <p id="attaque2"></p>
+            <p id="def2"></p>
+        </div>
+    </div>
+    <p id="error"></p>    
+</body>
+</html>
